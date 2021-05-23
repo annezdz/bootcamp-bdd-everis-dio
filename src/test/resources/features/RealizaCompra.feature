@@ -13,3 +13,11 @@ Funcionalidade: Realizar Compra no E-commerce
   	E pesquisa pelo produto "Blouse"
   	Quando adiciona o produto "Blouse" ao carrinho
   	Entao o produto "Blouse" deve estar presente no carrinho
+
+  Cenario: Aumentar a quantidade de produto atraves dos detalhes do produto
+	  Dado que um usuario acessa o site "http://automationpractice.com"
+	  E pesquisa pelo produto "Dress"
+	  E acessa o produto "Printed Chiffon Dress"
+	  E aumenta a quantidade para 2
+	  Quando adiciona o produto "Blouse" ao carrinho
+	  Entao o produto "Printed Chiffon Dress" deve possuir a quantidade 2
