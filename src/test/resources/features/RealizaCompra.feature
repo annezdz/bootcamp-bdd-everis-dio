@@ -1,7 +1,7 @@
 #language: pt
 #encoding: utf-8
 
-@test
+
 Funcionalidade: Realizar Compra no E-commerce
 
 	Como um comprador
@@ -14,10 +14,11 @@ Funcionalidade: Realizar Compra no E-commerce
   	Quando adiciona o produto "Blouse" ao carrinho
   	Entao o produto "Blouse" deve estar presente no carrinho
 
+@test
   Cenario: Aumentar a quantidade de produto atraves dos detalhes do produto
 	  Dado que um usuario acessa o site "http://automationpractice.com"
 	  E pesquisa pelo produto "Dress"
 	  E acessa o produto "Printed Chiffon Dress"
 	  E aumenta a quantidade para 2
-	  Quando adiciona o produto "Blouse" ao carrinho
+	  Quando adiciona o produto "Printed Chiffon Dress" ao carrinho
 	  Entao o produto "Printed Chiffon Dress" deve possuir a quantidade 2

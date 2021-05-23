@@ -6,7 +6,8 @@ import com.everis.pages.CarrinhoPage;
 
 import io.cucumber.java.pt.Entao;
 
-public class CarrinhoSteps {
+public class
+CarrinhoSteps {
 	
 	@Entao("^o produto \"(.*)\" deve estar presente no carrinho$")
 	public void apresentouProdutoEsperadoNoCarrinho(String nomeProduto) {
