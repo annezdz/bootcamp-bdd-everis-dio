@@ -19,6 +19,6 @@ Funcionalidade: Realizar Compra no E-commerce
 	  Dado que um usuario acessa o site "http://automationpractice.com"
 	  E pesquisa pelo produto "Dress"
 	  E acessa o produto "Printed Chiffon Dress"
-	  E aumenta a quantidade para 2
+	  E aumenta a quantidade produto
 	  Quando adiciona o produto "Printed Chiffon Dress" ao carrinho
 	  Entao o produto "Printed Chiffon Dress" deve possuir a quantidade 2
