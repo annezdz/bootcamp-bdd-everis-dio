@@ -13,7 +13,7 @@ public class LoginPage extends BasePage{
 
     //$x("//*[@name = 'email'][@class = 'is_required validate account_input form-control']")
 
-    @FindBy(id = ("//*[@id='passwd']"))
+    @FindBy(xpath = ("//*[@name = 'passwd'][@class = 'is_required validate account_input form-control']"))
     protected WebElement campoSenha;
 
     @FindBy(className = "icol-lock-left")
