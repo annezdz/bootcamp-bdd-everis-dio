@@ -22,6 +22,12 @@ public class CarrinhoPage extends BasePage {
 			"[@class = 'button btn btn-default standard-checkout button-medium']")
 	protected WebElement botaoConfirmaTransporte;
 
+	@FindBy(xpath = "//*[@title = 'Pay by check.'][@class = 'cheque']")
+	protected WebElement botaoConfirmaFormaPagamento;
+
+	@FindBy(xpath = "//*[@class = 'button btn btn-default button-medium']")
+	protected WebElement botaoFinalizaCompra;
+
 
 	public CarrinhoPage() {
 		PageFactory.initElements(Hooks.getDriver(), this);
@@ -64,5 +70,10 @@ public class CarrinhoPage extends BasePage {
 	public void deveConfirmarFormaTransporte() {
 		botaoConfirmaTermos.click();
 		botaoConfirmaTransporte.click();
+	}
+
+	public void deveConfirmarFormaPagamento() {
+		botaoConfirmaFormaPagamento.click();
+		botaoFinalizaCompra.click();
 	}
 }

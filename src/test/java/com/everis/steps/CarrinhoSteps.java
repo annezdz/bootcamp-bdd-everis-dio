@@ -1,5 +1,6 @@
 package com.everis.steps;
 
+import io.cucumber.java.pt.Quando;
 import org.junit.Assert;
 
 import com.everis.pages.CarrinhoPage;
@@ -34,6 +35,12 @@ CarrinhoSteps {
 		carrinhoPage.deveConfirmarFormaTransporte();
 	}
 
+	@Quando("^o pagamento for confirmado$")
+	public void deveConfirmarFormaPagamento(){
+		CarrinhoPage carrinhoPage = new CarrinhoPage();
+		carrinhoPage.deveConfirmarFormaPagamento();
+	}
+
 
 	@Entao("^o produto \"(.*)\" deve possuir a quantidade (.*)$")
 	public void oProdutoApresentouQuantidadeEsperada(String nomeProduto, String quantidadeProduto) {
@@ -44,3 +51,5 @@ CarrinhoSteps {
 
 		};
 	}
+
+
