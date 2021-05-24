@@ -44,6 +44,11 @@ public class BasePage {
 		}
 	}
 
+	protected void preencheCampoPorId(String id_campo, String value) {
+
+		driver.findElement(By.id(id_campo)).sendKeys(value);
+	}
+
 	protected void waitMilliseconds(int milliseconds) {
 		try {
 			Thread.sleep(milliseconds);

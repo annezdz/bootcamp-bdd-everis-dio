@@ -28,7 +28,7 @@ Funcionalidade: Realizar Compra no E-commerce
 	  E pesquisa pelo produto "Blouse"
 	  Quando adiciona o produto "Blouse" ao carrinho
 	  E acessar o checkout
-	  E realiza o login
+	  E realiza o login "everisbootcamp@qabeginner.com" "QA@everis213"
 #	  E confirma o endereco de entrega
 #	  E escolhe a forma de transporte
 #	  Quando o pagamento for confirmado

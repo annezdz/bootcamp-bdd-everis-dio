@@ -20,7 +20,8 @@ public class ResultadoPesquisaPage extends BasePage {
 	}
 
 	public void adicionarProdutoAoCarrinho(String nomeProduto) {
-		WebElement nomeProdutoTela = driver.findElement(By.xpath(".//*[@itemprop='name']/*[contains(text(), '" + nomeProduto + "')] | .//*[@itemprop='name'][text()='" + nomeProduto + "']"));
+		WebElement nomeProdutoTela = driver.findElement(By.xpath(".//*[@itemprop='name']/*[contains(text(), '"
+				+ nomeProduto + "')] | .//*[@itemprop='name'][text()='" + nomeProduto + "']"));
 		moveToElement(nomeProdutoTela);
 		botaoAdicionarAoCarrinho.click();
 		waitElement(botaoProsseguir, 10).click();

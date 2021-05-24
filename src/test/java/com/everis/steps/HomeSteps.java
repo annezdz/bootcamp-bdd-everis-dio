@@ -18,5 +18,4 @@ public class HomeSteps {
 		HomePage homePage = new HomePage();
 		homePage.pesquisarProduto(nomeProduto);
 	}
-	
 }
