@@ -11,7 +11,11 @@ public class CarrinhoPage extends BasePage {
 
 	@FindBy(xpath = "//*[text()='Proceed to checkout']")
 	protected WebElement botaoCheckout;
-	
+
+	@FindBy(xpath = "//*[text()='Proceed to checkout']")
+	protected WebElement botaoConfirmaEndereco;
+
+
 	public CarrinhoPage() {
 		PageFactory.initElements(Hooks.getDriver(), this);
 	}
@@ -42,6 +46,11 @@ public class CarrinhoPage extends BasePage {
 
     public void deveAcessarOCheckout() {
 		botaoCheckout.click();
-		log("Deve acessar o checkout");
+		log("Acessou o checkout");
     }
+
+	public void deveConfirmarOEndereco() {
+		botaoConfirmaEndereco.click();
+		log(" Confirmou o endereco");
+	}
 }
