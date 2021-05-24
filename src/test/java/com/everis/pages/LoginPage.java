@@ -11,28 +11,21 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = ("//*[@name = 'email'][@class = 'is_required validate account_input form-control']"))
     protected WebElement campoEmail;
 
-    //$x("//*[@name = 'email'][@class = 'is_required validate account_input form-control']")
-
     @FindBy(xpath = ("//*[@name = 'passwd'][@class = 'is_required validate account_input form-control']"))
     protected WebElement campoSenha;
 
-    @FindBy(className = "icol-lock-left")
+    @FindBy(xpath = ("//*[@name = 'SubmitLogin'][@class = 'button btn btn-default button-medium']"))
     protected WebElement botaoLogin;
 
     public LoginPage() {
         PageFactory.initElements(Hooks.getDriver(), this);
     }
 
-
-    //private BasePage base;
-
     public void fazerLogin(String email, String senha) {
 
         campoEmail.sendKeys(email);
         campoSenha.sendKeys(senha);
-//        base.preencheCampoPorId("email","everisbootcamp@qabeginner.com");
-//        base.preencheCampoPorId("passwd", "QA@everis213");
-        waitElement(botaoLogin,20).click();
-//        log("Realizou o login");
+        waitElement(botaoLogin,10).click();
+        log("Realizou o login");
     }
 }
