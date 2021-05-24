@@ -28,6 +28,12 @@ CarrinhoSteps {
 		carrinhoPage.deveConfirmarOEndereco();
 	}
 
+	@Entao("^escolhe a forma de transporte$")
+	public void deveConfirmarFormaTransporte(){
+		CarrinhoPage carrinhoPage = new CarrinhoPage();
+		carrinhoPage.deveConfirmarFormaTransporte();
+	}
+
 
 	@Entao("^o produto \"(.*)\" deve possuir a quantidade (.*)$")
 	public void oProdutoApresentouQuantidadeEsperada(String nomeProduto, String quantidadeProduto) {

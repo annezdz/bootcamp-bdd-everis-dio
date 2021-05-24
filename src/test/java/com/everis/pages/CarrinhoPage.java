@@ -15,6 +15,13 @@ public class CarrinhoPage extends BasePage {
 	@FindBy(xpath = "//*[text()='Proceed to checkout']")
 	protected WebElement botaoConfirmaEndereco;
 
+	@FindBy(xpath = "//*[@id = 'uniform-cgv'][@class = 'checker']")
+	protected WebElement botaoConfirmaTermos;
+
+	@FindBy(xpath = "//*[@name = 'processCarrier']" +
+			"[@class = 'button btn btn-default standard-checkout button-medium']")
+	protected WebElement botaoConfirmaTransporte;
+
 
 	public CarrinhoPage() {
 		PageFactory.initElements(Hooks.getDriver(), this);
@@ -52,5 +59,10 @@ public class CarrinhoPage extends BasePage {
 	public void deveConfirmarOEndereco() {
 		botaoConfirmaEndereco.click();
 		log(" Confirmou o endereco");
+	}
+
+	public void deveConfirmarFormaTransporte() {
+		botaoConfirmaTermos.click();
+		botaoConfirmaTransporte.click();
 	}
 }

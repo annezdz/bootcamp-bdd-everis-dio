@@ -30,7 +30,7 @@ Funcionalidade: Realizar Compra no E-commerce
 	  E acessar o checkout
 	  E realiza o login "everisbootcamp@qabeginner.com" "QA@everis213"
 	  E confirma o endereco de entrega
-#	  E escolhe a forma de transporte
+	  E escolhe a forma de transporte
 #	  Quando o pagamento for confirmado
 #	  Entao deve ser apresentado a mensagem "Your order on My Store is complete."
 
