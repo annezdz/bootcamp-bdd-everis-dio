@@ -27,7 +27,7 @@ Funcionalidade: Realizar Compra no E-commerce
 	  Dado que um usuario acessa o site "http://automationpractice.com"
 	  E pesquisa pelo produto "Blouse"
 	  Quando adiciona o produto "Blouse" ao carrinho
-#	  E acessa o checkout
+	  E acessar o checkout
 #	  E realiza o login
 #	  E confirma o endereco de entrega
 #	  E escolhe a forma de transporte

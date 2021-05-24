@@ -16,11 +16,19 @@ CarrinhoSteps {
 				carrinhoPage.apresentouProdutoEsperadoNoCarrinho(nomeProduto));
 	}
 
+	@Entao("^acessar o checkout$")
+	public void deveAcessarOCheckout(){
+		CarrinhoPage carrinhoPage = new CarrinhoPage();
+		carrinhoPage.deveAcessarOCheckout();
+	}
+
+
 	@Entao("^o produto \"(.*)\" deve possuir a quantidade (.*)$")
 	public void oProdutoApresentouQuantidadeEsperada(String nomeProduto, String quantidadeProduto) {
 		CarrinhoPage carrinhoPage = new CarrinhoPage();
 		Assert.assertTrue("O produto [" + nomeProduto + "] " +
 				"deveria ter a quantidade ["+ quantidadeProduto+ "]",
 				carrinhoPage.oProdutoApresentouQuantidadeEsperada(nomeProduto, quantidadeProduto));
+
 		};
 	}

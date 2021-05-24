@@ -35,4 +35,7 @@ public class CarrinhoPage extends BasePage {
 		logFail("Não apresentou a quantidade de produto esperada");
 		return false;
     }
+
+    public void deveAcessarOCheckout() {
+    }
 }
