@@ -1,13 +1,13 @@
-#Bootcamp Everis DIO BDD
+# Bootcamp Everis DIO BDD
 
-##Descrição
+## Descrição
 
 Projeto de execução de testes automatizados sobre as rotinas de compra de um ecommerce com diversos cenários de testes e
 resolução do desafio proposto na mentoria ao vivo.
 
 O desafio tratava-se do seguinte cenário:
 
-###Cenário
+### Cenário
 
 - Dado que um usuário acessa o site "http://automationpractice.com"
 - E pesquisa pelo produto "Blouse"
