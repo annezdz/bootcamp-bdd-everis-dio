@@ -41,6 +41,13 @@ CarrinhoSteps {
 		carrinhoPage.deveConfirmarFormaPagamento();
 	}
 
+	@Entao("^deve ser apresentado a mensagem \"(.*)\"")
+	public void deveApresentarMensagemFinal(String mensagem){
+		CarrinhoPage carrinhoPage = new CarrinhoPage();
+		Assert.assertTrue("Deveria ter apresentado a mensagem [ "+ mensagem +" ]",
+				carrinhoPage.apresentouAMensagemEsperada(mensagem));
+	}
+
 
 	@Entao("^o produto \"(.*)\" deve possuir a quantidade (.*)$")
 	public void oProdutoApresentouQuantidadeEsperada(String nomeProduto, String quantidadeProduto) {

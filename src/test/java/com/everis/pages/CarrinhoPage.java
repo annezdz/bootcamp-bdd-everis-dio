@@ -76,4 +76,15 @@ public class CarrinhoPage extends BasePage {
 		botaoConfirmaFormaPagamento.click();
 		botaoFinalizaCompra.click();
 	}
+
+	public boolean apresentouAMensagemEsperada(String mensagem) {
+		boolean apresentouAMensagemEsperada = isElementDisplayed
+				(By.xpath("//*[@class = 'alert alert-success']"));
+		if(apresentouAMensagemEsperada){
+			log("Apresentou a mensagem [" + mensagem + "] conforme esperado.");
+			return true;
+		}
+		logFail("Deveria ter apresentado a mensagem [" + mensagem + "].");
+		return false;
+	}
 }
